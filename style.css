@@ -5,33 +5,48 @@
 
 body{
     height:90em;
-    width: 90em;
+    width: 9git check 0em;
     overflow: hidden;
+    text-align: center;
+    background-color: black;
 }
 #titulo h1{
     text-align: center;
     font-size: 50px;
     margin-bottom: 80px;
+    color: white;
+}
+section{
+    width: 80%;
+    height: 30%;
+    background-color: rgb(255, 255, 255); 
+    margin-left: 10%;               
+}
+.perguntas{
+    color: white;
+    width: 30%;
+    height: 15%;
+    background-color: rgb(90, 187, 187);
+    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-right: 10px;
+    display:inline-table;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-size: 25px;
+    text-align: center;
+}
+.inputbtns{
+    height: 40px;
+    width: 40%;
+    border-radius: 20px;
+    margin-bottom: 5px;
+    cursor: pointer;
 }
 
-#botaoIniciar{
-    text-align: center;    
-}
-#botaoIniciar input{
-    height: 70px;
-    width: 250px;
-    border-radius: 30px;
-    background-color: black;
-    color: white;
-    font-size: 30px;
-    cursor:pointer;
-}
-#botaoIniciar input:hover{
-    height: 70px;
-    width: 220px;
-    border-radius: 30px;
-    background-color: white;
-    color: black;
-    font-size: 30px;
-    cursor:pointer;
+.inputs{
+    height: 30px;
+    width: 80%;
+    margin-bottom: 10px;
+    font-size:20px;
 }
