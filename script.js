@@ -12,7 +12,7 @@ function pegarRespostas(){
 function conferirResposta(){
     pegarRespostas();
     if(resposta == respostas.primeiraQuestao){
-        window.alert('Acertou')
+        window.alert('1 - Questão: Acertou')
     }
     else if (resposta == null){        
 
@@ -23,7 +23,7 @@ function conferirResposta(){
     }
 
     if(resposta2 == respostas.seguntaQuestao[0] ){
-        window.alert('Acertou')
+        window.alert('2 - Questão: Acertou')
     }
 
     else if (resposta2 ==  null){        
