@@ -22,17 +22,17 @@ function conferirResposta(){
     var cont = 1
     for(var i = 0; i<3; i++){
         console.log(resposta[i],[i])
-        console.log('Respostas'+questoesResp[i],[i])
-        if(resposta[i],[i] == questoesResp[i],[i]){
+        console.log('Respostas: '+questoesResp[cont],[0])
+        if(resposta[i],[0] == questoesResp[i],[0]){
             window.alert(cont +' - Questão: Acertou')
             cont++
          }
-        else if (resposta[i],[i] == ''){        
+        else if (resposta[i],[0] == ''){        
             window.alert('incorreto')
             cont++
         }
 
-        else if(resposta[i],[i] != questoesResp[i],[i]){
+        else if(resposta[i],[0] != questoesResp[i],[0]){
             window.alert('incorreto')
             cont++
         }
