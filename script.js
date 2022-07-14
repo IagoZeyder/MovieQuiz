@@ -1,40 +1,40 @@
 // Array com as repostas das perguntas
 
 var resposta = {
-    resposta1: ['',''],
-    resposta2: ['',''],
-    resposta3:['','']
+    respostas: ['','','']
+    
 }
 
 var questoesResp = {
-    primeiraQuestao: ['2001',''],
-    seguntaQuestao: ['Avatar','Vingadores Ultimato'],
-    terceiraQuestao:['Homem de Ferro','Homem Aranha',]
+    questoes: ['2001','Avatar','Homem de Ferro']   
 }
 function pegarRespostas(){    
-        resposta[0] = document.getElementById('input_1').value
-        resposta[1] = document.getElementById('input_2').value
-        resposta[2] = document.getElementById('input_3').value    
+        resposta.respostas[0] = document.getElementById('input_1').value             
+        resposta.respostas[1] = document.getElementById('input_2').value       
+        resposta.respostas[2] = document.getElementById('input_3').value            
 }
 
 function conferirResposta(){
     pegarRespostas();
     var cont = 1
     for(var i = 0; i<3; i++){
-        console.log(resposta[i],[i])
-        console.log('Respostas: '+questoesResp[cont],[0])
-        if(resposta[i],[0] == questoesResp[i],[0]){
+        console.log(resposta.respostas[i])
+        console.log('Respostas: '+questoesResp.questoes[i])
+        if(resposta.respostas[i] == questoesResp.questoes[i]){
             window.alert(cont +' - Questão: Acertou')
             cont++
          }
-        else if (resposta[i],[0] == ''){        
+        else if (resposta.respostas,[i] == ''){        
             window.alert('incorreto')
             cont++
         }
 
-        else if(resposta[i],[0] != questoesResp[i],[0]){
+        else if(resposta.respostas[i] != questoesResp.questoes,[i]){
             window.alert('incorreto')
             cont++
+        }
+        for(var e = 0; e<2; e++){
+            resposta.respostas[i] = ''
         }
   
     }
