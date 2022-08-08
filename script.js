@@ -40,9 +40,22 @@ function conferirResposta(){
   
     }
 }
-function mostrarPergunta(){
+function mostrarPergunta1(){
     document.querySelector('#pergunta_1').classList.remove('oculto')
-    document.querySelector('#pergunta_1').innerHTML = '1 - Qual o ano de lançamento do primero filme do Harry Potter? '
+    document.querySelector('#pergunta_1').innerHTML = '1 - Qual o ano de lançamento do primero filme do Harry Potter? ';
     document.querySelector('#pergunta_1').classList.add('perguntas')
-    document.getElementsByClassName('inputs').style.opacity = '0'
+    document.getElementsByClassName('inputs').style.opacity = '100%'
+    document.getElementsByClassName('inputs').style.height = '30px'
+    document.getElementsByClassName('inputs').style.width = '80%'
+    document.getElementsByClassName('inputs').style.marginBotton = '80%'
+}
+
+function mostrarPergunta2(){
+    document.querySelector('#pergunta_2').classList.remove('oculto')
+    document.querySelector('#pergunta_2').innerHTML = '2  O filme com maior bilheteria no cinema é Avatar ou Vingadores Ultimato';
+    document.querySelector('#pergunta_2').classList.add('perguntas')
+    document.getElementsByClassName('inputs').style.opacity = '100%'
+    document.getElementsByClassName('inputs').style.height = '30px'
+    document.getElementsByClassName('inputs').style.width = '80%'
+    document.getElementsByClassName('inputs').style.marginBotton = '80%'
 }
