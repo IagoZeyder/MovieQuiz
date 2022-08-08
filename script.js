@@ -12,7 +12,7 @@ function pegarRespostas(){
         resposta.respostas[0] = document.getElementById('input_1').value             
         resposta.respostas[1] = document.getElementById('input_2').value       
         resposta.respostas[2] = document.getElementById('input_3').value 
-        resposta.respostas[3] = document.getElementById('input_4').value            
+        resposta.respostas[3] = document.getElementById('input_4').value                    
 }
 
 function conferirResposta(){
@@ -39,4 +39,10 @@ function conferirResposta(){
         }
   
     }
+}
+function mostrarPergunta(){
+    document.querySelector('#pergunta_1').classList.remove('oculto')
+    document.querySelector('#pergunta_1').innerHTML = '1 - Qual o ano de lançamento do primero filme do Harry Potter? '
+    document.querySelector('#pergunta_1').classList.add('perguntas')
+    document.getElementsByClassName('inputs').style.opacity = '0'
 }
